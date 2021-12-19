@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Roboto:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Comfortaa:wght@300;400;700&family=Roboto:wght@300;400;900&display=swap');
+
+* {
+    /* font-family: 'Comfortaa', cursive; */
+    font-family: 'Bree Serif', serif;
+    letter-spacing: 3px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background: white;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 15px;
+    padding-right: 15px;
+    border-right: 2px dotted black;
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #EAE6CA;
+}
+
+header {
+    height: 83px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1140px;
+    background: linear-gradient(4deg, #5462c3, #ba872c);
+    /* position: fixed; */
+    /* top: 0; */
+}
+
+
+.menu {
+    width: 850px;
+    margin-left: 257px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+
+.menu_item a {
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.menu_item a:hover {
+    color: yellow;
+}
+
+.tab_name {
+    height: 70px;
+    background: #C5D0E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px dashed #20155E;
+    mask-border-slice: 20px;
+}
+
+.tab_name h2 {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 6px;
+    font-family: 'Bree Serif', serif;
+    color: #20155E;
+}
+
+.shop {
+    min-height: 400px;
+    background: #C5D0E6;
+    padding-top: 50px;  
+}
+
+.shop_container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.shop_item {
+    margin: 0 52px 50px 52px;
+    height: 220px;
+    width: 200px;
+    border: 3px solid #20155E;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    background: linear-gradient(66deg, #e38010, #1535bf);
+    transition: .4s;
+}
+
+.shop_item:hover {
+    background: linear-gradient(66deg, #e38090, #8731ef);
+    border: 3px solid #72f109;
+}
+
+.shop_item img {
+    margin: 0 auto;
+    width: 90%;
+    height: 80%;
+    border: 2px solid #20155E;
+    border-radius: 10px;
+}
+
+.shop_item .game_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+    color: white;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.shop_item .game_name:hover {
+    letter-spacing: 2px;
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(4deg, #5462c3, #ba872c);
+}
+
+footer h2 {
+    font-size: 16px;
+    color: white;
+}

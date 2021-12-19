@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Roboto:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Comfortaa:wght@300;400;700&family=Roboto:wght@300;400;900&display=swap');
+
+* {
+    /* font-family: 'Comfortaa', cursive; */
+    font-family: 'Bree Serif', serif;
+    letter-spacing: 3px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.tab_name h2 {
+    font-size: 24px;
+}
+
+.library_block {
+    height: 590px;
+    background: #C5D0E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.library_block p {
+    display: none;
+    font-size: 34px;
+}
+
+.metamask {
+    height: 100px;
+    width: 300px;
+    font-size: 26px;
+    border-radius: 10px;
+    background: violet;
+    transition: .8s;
+}
+
+.metamask:hover {
+    transform: scale(1.1);
+    border: 3px solid yellow;
+    color: white;
+}
+
+.choose_hover {
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(4deg, #5462c3, #ba872c);
+    font-size: 60px;
+    color: white;
+    transition: .8s;
+}
+
+.choose_hover:hover {
+    transform: scale(1.1);
+} 
+
+.plus {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display:inline-block;
+    width:50px;
+    height:50px;
+    
+    background:
+      linear-gradient(#fff,#fff),
+      linear-gradient(#fff,#fff),
+      #000;
+    background-position:center;
+    background-size: 50% 2px,2px 50%; /*thickness = 2px, length = 50% (25px)*/
+    background-repeat:no-repeat;
+    border-radius:50%;
+    transition: .3s;
+}
+
+.plus:hover {
+    transform: scale(1.1);
+}
