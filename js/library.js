@@ -82,10 +82,51 @@ document.addEventListener('DOMContentLoaded', () => {
     
                 for (let i = 0; i < hideChooses.length; i++) {
                     hideChooses[i].style.display = 'none';
+
                     libraryBlock.innerHTML = `
                         <div class="plus"></div>
+                        <div class="no_games">You have no uploaded games</div>
                     `;
+
+                    const noGames = document.querySelector('.no_games')
+                    noGames.style.display = 'flex';
                 }
+
+                const addGame = document.querySelector('.plus');
+                addGame.addEventListener('click', () => {
+                    libraryBlock.innerHTML = `
+                        <div class="plus"></div>
+                        <div>
+                            <input type="file">
+                        </div>
+                        <div class="game_wrapper">
+                            
+                        </div>
+                    `;
+
+                    let gameWrapper = document.querySelector('.game_wrapper'),
+                        input = document.querySelector('input');
+                        input.addEventListener('onload', () => {
+                            let file = this.files[0],
+                                reader = new FileReader();
+
+                            console.log(file);
+
+                            reader.readAsDataURL(file);
+
+                            reader.onload = function() {
+                                let img = document.createElement('img');
+                                gameWrapper.appendChild(img);
+                                img.src = reader.result;
+                            }
+
+                        });
+                          
+                    
+                    
+
+                });
+
             });
 
             chooseGamer.addEventListener('click', () => {

@@ -90,9 +90,13 @@
     display: none;
     justify-content: center;
     align-items: center;
-    width: 350px;
+    width: 400px;
     height: 100px;
     border: 2px solid black;
     border-radius: 13px;
     background: white;
+}
+
+.input_div, .game_wrapper {
+    display: none;
 }
